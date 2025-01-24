@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C42018B12D439EB500C085C5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C42018B02D439EB500C085C5 /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C420186F2D439C7F00C085C5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		C420185E2D439C7D00C085C5 /* SwiftUIWithCombine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIWithCombine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C420186E2D439C7F00C085C5 /* SwiftUIWithCombineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIWithCombineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C42018782D439C7F00C085C5 /* SwiftUIWithCombineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIWithCombineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C42018B02D439EB500C085C5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		C42018552D439C7D00C085C5 = {
 			isa = PBXGroup;
 			children = (
+				C42018B02D439EB500C085C5 /* README.md */,
 				C42018602D439C7D00C085C5 /* SwiftUIWithCombine */,
 				C42018712D439C7F00C085C5 /* SwiftUIWithCombineTests */,
 				C420187B2D439C7F00C085C5 /* SwiftUIWithCombineUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42018B12D439EB500C085C5 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
