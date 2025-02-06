@@ -122,6 +122,60 @@ struct BasicControlsView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 8))
                     }
                 }
+
+                Divider()
+
+                // MARK: - List 示例
+                Group {
+                    sectionHeader("List 示例")
+
+                    List {
+                        Section("静态列表") {
+                            Text("列表项 1")
+                            Text("列表项 2")
+                            Text("列表项 3")
+                        }
+
+                        Section("动态列表") {
+                            ForEach(0..<3) { index in
+                                HStack {
+                                    Image(systemName: "star.fill")
+                                        .foregroundStyle(.yellow)
+                                    Text("动态项 \(index + 1)")
+                                }
+                            }
+                        }
+                    }
+                    .frame(height: 250)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                }
+
+                Divider()
+
+                // MARK: - Form 示例
+                Group {
+                    sectionHeader("Form 示例")
+
+                    Form {
+                        Section("个人信息") {
+                            TextField("姓名", text: $text)
+                            Toggle("接收通知", isOn: $isToggleOn)
+                            DatePicker("生日", selection: $selectedDate, displayedComponents: .date)
+                        }
+
+                        Section("偏好设置") {
+                            Picker("主题色", selection: $selectedTab) {
+                                ForEach(0..<colors.count, id: \.self) { index in
+                                    Text(colors[index].description.capitalized)
+                                        .tag(index)
+                                }
+                            }
+                            Stepper("字体大小: \(stepperValue)", value: $stepperValue, in: 1...10)
+                        }
+                    }
+                    .frame(height: 300)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                }
             }
             .padding()
         }
